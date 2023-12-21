@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web player: Music for everyone</title>
+    <link rel="icon" href="Spotify_Images/sp-logo.avif">
+    <script src="https://kit.fontawesome.com/1da18cb119.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+
+
+</head>
+
+<body>
+    <div>
+        <div class="div-container">
+            <div class="div-left">
+
+                <!--Home Division-->
+                <div class="home-div">
+                    <a href="#">
+                        <h3 style="color:white"> <i class="fa-solid fa-house"
+                                style="color: #fcfcfc;font-size:20px;margin-right:20px;"></i>Home</h3>
+                    </a>
+                    <a href="search.html">
+                        <h3 style="margin-top:30px;color:#8d8e8f;" id="search-white"><i
+                                class="fa-solid fa-magnifying-glass"
+                                style="color: #8d8e8f;font-size:20px;margin-right:20px;"></i>Search</h3>
+                    </a>
+
+                </div>
+                <!--Playlist Division-->
+                <div class="play-list">
+                    <div style="display: flex;flex-direction: row;justify-content: space-between;margin-bottom:20px;">
+                        <a href="#">
+                            <h3 style="color:#8d8e8f;"> <i class="fa-solid fa-book"
+                                    style="color: #8d8e8f;font-size:20px;margin-right:15px;"></i>Your Library</h3>
+                        </a>
+                        <a href="#">
+                            <h3 style="margin-left:10px;"><abbr title="Create a playlist or folder"><i
+                                        class="fa-solid fa-plus" style="color: #8d8e8f;font-size:20px;"
+                                        id="plus-plus"></i></abbr></h3>
+                        </a>
+                        <a href="#">
+                            <h3><abbr title="Show more"><i class="fa-solid fa-arrow-right"
+                                        style="color: #8d8e8f;font-size:20px;" id="plus-plus"></i></abbr></h3>
+                        </a>
+                    </div>
+                    <a href="#"><button class="btn">Playlists</button></a>
+                    <div style="display: flex;flex-direction: row;justify-content: space-around;margin-bottom:20px;">
+                        <div id="search-icon"><abbr title="Search in Your Library"><i
+                                    class="fa-solid fa-magnifying-glass"
+                                    style="color: #f1f4f8;font-size:18px;"></i></abbr></div>
+                        <p id="recently-added">Recently Added &nbsp; <i class="fa-solid fa-angle-down"
+                                style="color: #eceff3;font-size:20px;"></i></p>
+                    </div>
+
+
+                    <!--playlist div-->
+                    <div style="overflow: auto;height:210px;width:100%;border-radius: 10px;">
+
+                        <div class="playlist-div"
+                            onclick="play_song('https://pagalworld.co.uk/files/download/id/1107')">
+                            <div class="playlist-div1">
+                                <i class="fa-solid fa-music"
+                                    style="color: #ededed;margin-top:10px;font-size: 25px;"></i>
+                            </div>
+                            <div style="height:45px;">
+                                <h3>My Playlist #1</h3>
+                                <p>Playlist . B . Dhanunjaya</p>
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="playlist-div"
+                            onclick="play_song('https://pagalworlds.co/wp-content/uploads/2023/05/Heartbreak-Anniversary.mp3')">
+                            <div class="playlist-div1">
+                                <i class="fa-solid fa-music"
+                                    style="color: #ededed;margin-top:10px;font-size: 25px;"></i>
+                            </div>
+                            <div style="height:45px;">
+                                <h3>My Playlist #2</h3>
+                                <p>Playlist Favorite</p>
+                            </div>
+
+                        </div>
+
+
+
+
+                        <div class="playlist-div" onclick="play_song('https://pagalworld.cool/files/download/id/531')">
+                            <div class="playlist-div1">
+                                <i class="fa-solid fa-music"
+                                    style="color: #ededed;margin-top:10px;font-size: 25px;"></i>
+                            </div>
+                            <div style="height:45px;">
+                                <h3>My Playlist #3</h3>
+                                <p>Royalty</p>
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="playlist-div"
+                            onclick="play_song('https://mp3teluguwap.net/mp3/111/Most%20Eligible%20Bachelor/Most%20Eligible%20Bachelor%20-%20HQ/Guche%20Gulabi.mp3')">
+                            <div class="playlist-div1">
+                                <i class="fa-solid fa-music"
+                                    style="color: #ededed;margin-top:10px;font-size: 25px;"></i>
+                            </div>
+                            <div style="height:45px;">
+                                <h3>My Playlist #4</h3>
+                                <p>Romantic Playlist</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+
+                </div>
+
+
+
+            </div>
+            <!-- Right Division-->
+            <div class="div-right">
+                <div class="right-div-nav">
+                    <abbr title="Upgrade to Premium"><button class="btn-explore">Explore Premium</button></abbr>
+                    <button class="btn-install"><i class="fa-regular fa-circle-down"
+                            style="color: #ffffff;font-size:16px;padding: 4px;"></i>Install App</button>
+                    <p><abbr title="What's New"><i class="fa-regular fa-bell" style="color: #e4e4e6;"
+                                id="bell"></i></abbr></p>
+                    <p><abbr title="B Dhanunjaya"><i class="fa-regular fa-user" style="color: #e4e4e6;" id="bell"
+                                onclick="location.href='Spotify_home.html'"></i></abbr></p>
+
+                </div><br>
+
+                <div class="heading-container">
+                    <h3 class="right-div-heading">Spotify original & exclusive shows </h3>
+                    <p class="right-div-showall">Show all</p>
+
+                </div>
+
+
+                <!--shows row-->
+
+                <div
+                    style="width:100%;display: flex;flex-direction: row;justify-content: space-around;margin-bottom:40px;flex-wrap: wrap;gap:20px;">
+
+                    <div class="show-div"
+                        onclick="location.href=('https://open.spotify.com/show/1ymvFxRf8M4wChKd1LC9mW')">
+                        <img src="Spotify_Images/chanakya.jpeg" alt="chan" class="img-img">
+                        <img src="Spotify_Images/play_btn.png" alt="" class="play-button">
+                        <h6 class="show-name">Chankya Niti</h6>
+                        <p class="show-actor">Kiran Chavda</p>
+                    </div>
+
+                    <div class="show-div"
+                        onclick="location.href=('https://open.spotify.com/show/2vhxApfLLtI8yCd7hqPokR')">
+                        <img src="Spotify_Images/horror.jpeg" alt="horror" class="img-img">
+                        <img src="Spotify_Images/play_btn.png" alt="" class="play-button">
+                        <h6 class="show-name">The Horror Show...</h6>
+                        <p class="show-actor">TMV Studios</p>
+                    </div>
+
+                    <div class="show-div"
+                        onclick="location.href=('https://open.spotify.com/show/58g95EqsrSk5ViIl3wGDzo')">
+                        <img src="Spotify_Images/nalla.jpeg" alt="nalla" class="img-img">
+                        <img src="Spotify_Images/play_btn.png" alt="" class="play-button">
+                        <h6 class="show-name">Nallanaa Murukk...</h6>
+                        <p class="show-actor">Spotify Studios</p>
+                    </div>
+
+                    <div class="show-div"
+                        onclick="location.href=('https://open.spotify.com/show/1Bmx7t2vYAa1jGUeJ9f2BO')">
+                        <img src="Spotify_Images/virus.jpeg" alt="virus" class="img-img">
+                        <img src="Spotify_Images/play_btn.png" alt="" class="play-button">
+                        <h6 class="show-name">Virus 2062 with A...</h6>
+                        <p class="show-actor">Spotify Studios</p>
+                    </div>
+
+                    <div class="show-div"
+                        onclick="location.href=('https://open.spotify.com/show/4vS5KRYWFT9xTUlO8XOAj5')">
+                        <img src="Spotify_Images/preth.jpeg" alt="pretkotha" width="200" class="img-img">
+                        <img src="Spotify_Images/play_btn.png" alt="" class="play-button">
+                        <h6 class="show-name">Pretkotha (Bengali..</h6>
+                        <p class="show-actor">Gourab Thabadar</p>
+                    </div>
+
+
+                </div>
+
+                <!--Try something row-->
+
+                <div class="heading-container">
+                    <h3 class="right-div-heading">Try something else </h3>
+                    <p class="right-div-showall">Show all</p>
+
+                </div>
+
+
+
+                <div
+                    style="width:100%;display: flex;flex-direction: row;justify-content: space-around;margin-bottom:30px;flex-wrap: wrap;gap:20px;">
+
+                    <div class="show-div"
+                        onclick="location.href=('https://open.spotify.com/playlist/37i9dQZF1DX0XUfTFmNBRM')">
+                        <img src="Spotify_Images/hindi1.jpeg" alt="chan" class="img-img">
+                        <img src="Spotify_Images/play_btn.png" alt="" class="play-button">
+                        <h6 class="show-name">Hot Hits Hindi</h6>
+                        <p class="show-actor">Hottest hindi music served here. Cover-.</p>
+                    </div>
+
+                    <div class="show-div"
+                        onclick="location.href=('https://open.spotify.com/playlist/37i9dQZF1DWZNJXX2UeBij')">
+                        <img src="Spotify_Images/allout.jpeg" alt="chan" class="img-img">
+                        <img src="Spotify_Images/play_btn.png" alt="" class="play-button">
+                        <h6 class="show-name">All Out 00's Hindi</h6>
+                        <p class="show-actor">Bollywood songs that ruled hearts in the Y2.</p>
+                    </div>
+
+                    <div class="show-div"
+                        onclick="location.href=('https://open.spotify.com/playlist/37i9dQZF1DWVq1SXCH6uFn')">
+                        <img src="Spotify_Images/lovehit.jpeg" alt="chan" class="img-img">
+                        <img src="Spotify_Images/play_btn.png" alt="" class="play-button">
+                        <h6 class="show-name">00's Love Hits</h6>
+                        <p class="show-actor">Fall in love with 00's Bollywood like never...</p>
+                    </div>
+
+                    <div class="show-div"
+                        onclick="location.href=('https://open.spotify.com/playlist/37i9dQZF1DWXVJK4aT7pmk')">
+                        <img src="Spotify_Images/panjabi.jpeg" alt="chan" class="img-img">
+                        <img src="Spotify_Images/play_btn.png" alt="" class="play-button">
+                        <h6 class="show-name">Hot Hits Punjabi</h6>
+                        <p class="show-actor">Catch the hottest punjabi tracks with ..</p>
+                    </div>
+
+                    <div class="show-div"
+                        onclick="location.href=('https://open.spotify.com/playlist/37i9dQZF1DWX76Z8XDsZzF')">
+                        <img src="Spotify_Images/chill.jpeg" alt="chan" class="img-img">
+                        <img src="Spotify_Images/play_btn.png" alt="" class="play-button">
+                        <h6 class="show-name">Bollywood Chill</h6>
+                        <p class="show-actor">Wind down the summer heat with Bollywoods..</p>
+                    </div>
+
+
+                </div>
+
+
+                <!--Trending now-->
+
+
+                <div class="heading-container">
+                    <h3 class="right-div-heading">Trending Now</h3>
+                    <p class="right-div-showall">Show all</p>
+
+                </div>
+
+
+
+                <div
+                    style="width:100%;display: flex;flex-direction: row;justify-content: space-around;margin-bottom:30px;flex-wrap: wrap;gap:20px;">
+
+                    <div class="show-div"
+                        onclick="location.href=('https://open.spotify.com/album/7zAITOBN6eG4UBm4IapAik')">
+                        <img src="Spotify_Images/chaleya.jpeg" alt="chan" class="img-img">
+                        <img src="Spotify_Images/play_btn.png" alt="" class="play-button">
+                        <h6 class="show-name">Chaleya (Jawan)</h6>
+                        <p class="show-actor">Anirudh Ravichander, Ajith Singh Shilpa rao</p>
+                    </div>
+
+                    <div class="show-div"
+                        onclick="location.href=('https://open.spotify.com/track/0645eBDehHcqfiF15hscQV')">
+                        <img src="Spotify_Images/janiye.jpeg" alt="chan" class="img-img">
+                        <img src="Spotify_Images/play_btn.png" alt="" class="play-button">
+                        <h6 class="show-name">Janiye from the(N..</h6>
+                        <p class="show-actor">Vishal Mishra</p>
+                    </div>
+
+                    <div class="show-div"
+                        onclick="location.href=('https://open.spotify.com/album/0SB9pkSJOzevi6IpIBJbwy')">
+                        <img src="Spotify_Images/rocky.jpeg" alt="chan" class="img-img">
+                        <img src="Spotify_Images/play_btn.png" alt="" class="play-button">
+                        <h6 class="show-name">Rocky our Rani ki..</h6>
+                        <p class="show-actor">Pritam ,Amitabh ,Bhattacharya</p>
+                    </div>
+
+                    <div class="show-div"
+                        onclick="location.href=('https://open.spotify.com/track/0wJ9ScQ2fMJspiwOU1oO12')">
+                        <img src="Spotify_Images/tony.jpeg" alt="chan" class="img-img">
+                        <img src="Spotify_Images/play_btn.png" alt="" class="play-button">
+                        <h6 class="show-name">Meherbaan</h6>
+                        <p class="show-actor">Tony kakkar</p>
+                    </div>
+
+                    <div class="show-div"
+                        onclick="location.href=('https://open.spotify.com/track/6sPW145Y3LSXd4p1LjBOcS')">
+                        <img src="Spotify_Images/zara.jpeg" alt="chan" class="img-img">
+                        <img src="Spotify_Images/play_btn.png" alt="" class="play-button">
+                        <h6 class="show-name">Best Love Song</h6>
+                        <p class="show-actor">Anirudh varma</p>
+                    </div>
+
+
+                </div>
+
+                <!-- popular Artists -->
+
+
+                <div class="heading-container">
+                    <h3 class="right-div-heading">Popular artists</h3>
+                    <p class="right-div-showall">Show all</p>
+
+                </div>
+
+
+
+                <div
+                    style="width:100%;display: flex;flex-direction: row;justify-content: space-around;margin-bottom:30px;flex-wrap: wrap;gap:20px;">
+
+                    <div class="show-div"
+                        onclick="location.href=('https://open.spotify.com/album/7zAITOBN6eG4UBm4IapAik')">
+                        <img src="Spotify_Images/shreya-goshal.jpeg" alt="chan" class="img-img" id="img-rounded">
+                        <img src="Spotify_Images/play_btn.png" alt="" class="play-button">
+                        <h6 class="show-name">Shreya Goshal</h6>
+                        <p class="show-actor">Artist</p>
+                    </div>
+
+                    <div class="show-div"
+                        onclick="location.href=('https://open.spotify.com/track/0645eBDehHcqfiF15hscQV')">
+                        <img src="Spotify_Images/anirudh.jpeg" alt="chan" class="img-img" id="img-rounded">
+                        <img src="Spotify_Images/play_btn.png" alt="" class="play-button">
+                        <h6 class="show-name">Anirudh Ravichan...</h6>
+                        <p class="show-actor">Artist</p>
+                    </div>
+
+                    <div class="show-div"
+                        onclick="location.href=('https://open.spotify.com/album/0SB9pkSJOzevi6IpIBJbwy')">
+                        <img src="Spotify_Images/arijit.jpeg" alt="chan" class="img-img" id="img-rounded">
+                        <img src="Spotify_Images/play_btn.png" alt="" class="play-button">
+                        <h6 class="show-name">Arijit Singh</h6>
+                        <p class="show-actor">Artist</p>
+                    </div>
+
+                    <div class="show-div"
+                        onclick="location.href=('https://open.spotify.com/track/0wJ9ScQ2fMJspiwOU1oO12')">
+                        <img src="Spotify_Images/pritam.jpeg" alt="chan" class="img-img" id="img-rounded">
+                        <img src="Spotify_Images/play_btn.png" alt="" class="play-button">
+                        <h6 class="show-name">Pritam</h6>
+                        <p class="show-actor">Artist</p>
+                    </div>
+
+                    <div class="show-div"
+                        onclick="location.href=('https://open.spotify.com/track/6sPW145Y3LSXd4p1LjBOcS')">
+                        <img src="Spotify_Images/amitabh.jpeg" alt="chan" class="img-img" id="img-rounded">
+                        <img src="Spotify_Images/play_btn.png" alt="" class="play-button">
+                        <h6 class="show-name">Amitabh Bhattach...</h6>
+                        <p class="show-actor">Artist</p>
+                    </div>
+
+
+                </div>
+
+
+
+                <!--Featured charts-->
+                <div class="heading-container">
+                    <h3 class="right-div-heading">Featured Charts</h3>
+                    <p class="right-div-showall">Show all</p>
+
+                </div>
+
+
+
+                <div
+                    style="width:100%;display: flex;flex-direction: row;justify-content: space-around;margin-bottom:100px;flex-wrap: wrap;gap:20px;">
+
+                    <div class="show-div"
+                        onclick="location.href=('https://open.spotify.com/playlist/37i9dQZEVXbNG2KDcFcKOF')">
+                        <img src="Spotify_Images/top-s-global.jpg" alt="chan" class="img-img">
+                        <img src="Spotify_Images/play_btn.png" alt="" class="play-button">
+                        <h6 class="show-name">Top Songs - Gobal</h6>
+                        <p class="show-actor">Your weekly update of mostly played track..</p>
+                    </div>
+
+                    <div class="show-div"
+                        onclick="location.href=('https://open.spotify.com/playlist/37i9dQZEVXbMWDif5SCBJq')">
+                        <img src="Spotify_Images/top-s-india.jpg" alt="chan" class="img-img">
+                        <img src="Spotify_Images/play_btn.png" alt="" class="play-button">
+                        <h6 class="show-name">Top Songs - India</h6>
+                        <p class="show-actor">Your weekly update of mostly played track..</p>
+                    </div>
+
+                    <div class="show-div"
+                        onclick="location.href=('https://open.spotify.com/playlist/37i9dQZEVXbMDoHDwVN2tF')">
+                        <img src="Spotify_Images/top-50.jpg" alt="chan" class="img-img">
+                        <img src="Spotify_Images/play_btn.png" alt="" class="play-button">
+                        <h6 class="show-name">Top 50 - Global</h6>
+                        <p class="show-actor">Your weekly update of mostly played track..</p>
+                    </div>
+
+                    <div class="show-div"
+                        onclick="location.href=('https://open.spotify.com/playlist/37i9dQZEVXbLZ52XmnySJg')">
+                        <img src="Spotify_Images/top-50-india.jpg" class="img-img">
+                        <img src="Spotify_Images/play_btn.png" alt="" class="play-button">
+                        <h6 class="show-name">Top 50 - India</h6>
+                        <p class="show-actor">Your weekly update of mostly played track..</p>
+                    </div>
+
+                    <div class="show-div"
+                        onclick="location.href=('https://open.spotify.com/playlist/37i9dQZEVXbLiRSasKsNU9')">
+                        <img src="Spotify_Images/viral-50.jpg" alt="chan" class="img-img">
+                        <img src="Spotify_Images/play_btn.png" alt="" class="play-button">
+                        <h6 class="show-name">Viral 50 - Global</h6>
+                        <p class="show-actor">Your weekly update of mostly viral track..</p>
+                    </div>
+
+
+                </div>
+
+                <!--About info-->
+
+                <div class="table-div-container">
+                    <div style="width:70%">
+                        <table style="font-size:16px;margin-left:20px" cellspacing="15px">
+                            <thead>
+                                <tr>
+                                    <th style="padding-right:80px">Company</th>
+                                    <th style="padding-right:60px">Communities</th>
+                                    <th>Useful links</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="#">About</a></td>
+                                    <td><a href="#">For Artists</a></td>
+                                    <td><a href="#">Support</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">Jobs</a></td>
+                                    <td><a href="#">Developers</a></td>
+                                    <td><a href="#">Fee Mobile App</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">For the record</a></td>
+                                    <td><a href="#">Advertising</a></td>
+                                    <td></td>
+                                </tr>
+
+                                <tr>
+                                    <td></td>
+                                    <td><a href="#">Investors</a></td>
+                                    <td></td>
+                                </tr>
+
+                                <tr>
+                                    <td></td>
+                                    <td><a href="#">Vendors</a></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                    <!--Insta Twitter fb icon container -->
+
+                    <div class="i-t-f-container">
+                        <div class="i-t-f-div"><i class="fa-brands fa-instagram"
+                                style="color: #fcfcfc;margin-top: 10px;"></i></div>
+                        <div class="i-t-f-div"> <i class="fa-brands fa-twitter"
+                                style="color: #f7f7f7;margin-top:10px;"></i></div>
+                        <div class="i-t-f-div"><i class="fa-brands fa-facebook"
+                                style="color: #f4f7fa;margin-top:10px;"></i></div>
+
+
+                    </div>
+
+
+                </div>
+
+                <p style="border-bottom: 1px solid rgb(156, 154, 154);"></p>
+
+                <div id="about-div">
+
+                    <a href="#">Legal</a>
+                    <a href="#">Privacy Center</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Cookies</a>
+                    <a href="#">About Ads</a>
+                    <a href="#">Accessibility</a>
+
+                </div>
+
+
+
+
+
+            </div>
+
+        </div>
+
+        <!--Footer Divison-->
+        <div class="footer"
+            style="background-color:black;height:80px;box-sizing: border-box;width:100%;text-align: center;">
+            <audio src="" controls style="width:500px;height:45px;margin-top:10px;" id="audio">
+            </audio>
+        </div>
+
+        <script>
+            function play_song(sr) {
+                var audio = document.getElementById('audio');
+                audio.src = sr;
+                audio.play();
+            }
+        </script>
+
+    </div>
+</body>
+
+</html>

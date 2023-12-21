@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-head-div {
+    width: 100%;
+    height: 46px;
+    padding: 28px;
+    background-color: black;
+}
+
+.login-spotify-logo {
+    height: 36px;
+    width: 117px;
+    margin-left: 22px;
+    margin-top: 4px;
+}
+
+.bg-container {
+    background-image: linear-gradient(180deg,#1f1e1e,black);
+    padding: 32px;
+
+}
+
+.login-bg-container {
+    background-color: black;
+    width: 58%;
+    margin-left: 21%;
+    text-align: center;
+    padding-top: 30px;
+
+}
+
+.login-bg-container h1 {
+    font-size: 3rem;
+}
+
+
+.login-google {
+
+    width: 40%;
+    height: 50px;
+    border: 1px solid rgb(116, 115, 115);
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 30px;  
+    padding: 0px 20px;
+    cursor:context-menu;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.login-google:hover {
+    border: 1px solid white;
+}
+#Continue-with-phone{
+    margin: auto;
+}
+
+.gmail-fb-logo {
+    width: 20px;
+    height: 20px;
+    margin-right: 50px;
+    object-fit: cover;
+}
+
+.login-form{
+    width:45%;
+    background-color: black;
+    margin: auto;
+}
+.login-label-name{
+    font-weight: bold;
+    font-size: 14px;
+    float: left;
+}
+
+.login-email-input-box{
+    width:96%;
+    border:1px solid rgb(116, 115, 115);
+    height:45px;
+    background: rgb(24, 24, 24);
+    border-radius: 4px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color:white;
+    font-weight: 500;
+    font-size: 15px;
+    padding-left: 10px;
+}
+.login-email-input-box::placeholder{
+    color:rgb(148, 147, 147);
+    font-size:15px;
+    font-weight: 550;
+}
+
+.login-email-input-box:hover{  
+    border:1px solid rgb(245, 243, 243);
+}
+#login-submit-btn{
+    width:98%;
+    height:50px;
+    background-color: #1fdf64;
+    color:black;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    border-radius: 30px;
+    margin-bottom: 35px;
+    
+}
+#login-submit-btn:hover{
+    transform: scale(1.04);
+    
+  
+}
+#login-forgot-pwd{
+    font-size: 16px;
+    font-weight: 600;
+    color:white;
+}
+#login-forgot-pwd:hover{
+    color:#1ed760;
+}
+#log-in-here{
+    color:white;
+}
+#log-in-here:hover{
+    color:#1ed760;
+}
+.pp-tos{
+    color:rgb(153, 152, 152);
+}
+
+

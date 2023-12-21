@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Search</title>
+    <link rel="icon" href="Spotify_Images/sp-logo.avif">
+    <script src="https://kit.fontawesome.com/1da18cb119.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="search.css">
+
+
+</head>
+
+<body>
+    <div>
+        <div class="div-container">
+            <div class="div-left">
+
+                <!--Home Division-->
+                <div class="home-div">
+                    <a href="index.html">
+                        <h3 style="color:#8d8e8f"> <i class="fa-solid fa-house"
+                                style="color: #8d8e8f;font-size:20px;margin-right:20px;"></i>Home</h3>
+                    </a>
+                    <a href="#" id="search">
+                        <h3 style="margin-top:10px;color:white"><i class="fa-solid fa-magnifying-glass"
+                                style="color: white;font-size:20px;margin-right:20px;"></i>Search</h3>
+                    </a>
+
+                </div>
+                <!--Playlist Division-->
+                <div class="play-list">
+                    <div style="display: flex;flex-direction: row;justify-content: space-between;margin-bottom:20px;">
+                        <a href="#">
+                            <h3 style="color:#8d8e8f;"><i class="fa-solid fa-book"
+                                    style="color: #8d8e8f;font-size:20px;margin-right:15px;"></i>Your Library</h3>
+                        </a>
+                        <a href="#">
+                            <h3 style="margin-left:10px;"><abbr title="Create playlist or folder"><i
+                                        class="fa-solid fa-plus" style="color: #8d8e8f;font-size:20px;"></i></abbr></h3>
+                        </a>
+                        <a href="#">
+                            <h3 style="margin-left:10px;"><abbr title="Show more"><i class="fa-solid fa-arrow-right"
+                                        style="color: #8d8e8f;font-size:20px;"></i></abbr></h3>
+                        </a>
+                    </div>
+                    <a href="#"><button class="btn">Playlists</button></a>
+                    <div style="display: flex;flex-direction: row;justify-content: space-around;margin-bottom:20px;">
+                        <div id="search-icon"><abbr title="Search in Your Library"> <i
+                                    class="fa-solid fa-magnifying-glass"
+                                    style="color: #f1f4f8;font-size:18px;"></i></abbr></div>
+                        <p id="recently-added">Recently Added &nbsp; <i class="fa-solid fa-angle-down"
+                                style="color: #eceff3;font-size:20px;"></i></p>
+                    </div>
+
+
+                    <!--playlist div-->
+                    <div style="overflow: auto;height:210px;width:100%;border-radius: 10px;">
+
+                        <div class="playlist-div"
+                            onclick="play_song('https://pagalworld.co.uk/files/download/id/1107')">
+                            <div class="playlist-div1">
+                                <i class="fa-solid fa-music"
+                                    style="color: #ededed;margin-top:10px;font-size: 25px;"></i>
+                            </div>
+                            <div style="height:45px;">
+                                <h3>My Playlist #1</h3>
+                                <p>Playlist . B . Dhanunjaya</p>
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="playlist-div"
+                            onclick="play_song('https://pagalworld.cool/files/download/id/308')">
+                            <div class="playlist-div1">
+                                <i class="fa-solid fa-music"
+                                    style="color: #ededed;margin-top:10px;font-size: 25px;"></i>
+                            </div>
+                            <div style="height:45px;">
+                                <h3>My Playlist #2</h3>
+                                <p>Telugu Pakkalocal</p>
+                            </div>
+
+                        </div>
+
+
+
+
+                        <div class="playlist-div" onclick="play_song('https://pagalworld.cool/files/download/id/531')">
+                            <div class="playlist-div1">
+                                <i class="fa-solid fa-music"
+                                    style="color: #ededed;margin-top:10px;font-size: 25px;"></i>
+                            </div>
+                            <div style="height:45px;">
+                                <h3>My Playlist #3</h3>
+                                <p>Royalty</p>
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="playlist-div"
+                            onclick="play_song('https://mp3teluguwap.net/mp3/111/Most%20Eligible%20Bachelor/Most%20Eligible%20Bachelor%20-%20HQ/Guche%20Gulabi.mp3')">
+                            <div class="playlist-div1">
+                                <i class="fa-solid fa-music"
+                                    style="color: #ededed;margin-top:10px;font-size: 25px;"></i>
+                            </div>
+                            <div style="height:45px;">
+                                <h3>My Playlist #4</h3>
+                                <p>Romantic Playlist</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+
+                </div>
+
+
+
+            </div>
+            <!-- Right Division-->
+            <div class="div-right">
+                <div class="right-div-nav">
+                    <div style="display: flex;align-items: center;">
+                        <div style="margin-left: 5%;display: flex;margin-right:15px;">
+                            <a href="index.html"> <i class="fa-solid fa-chevron-left"
+                                    style="color: #edeff2;;"></i></a>&nbsp;&nbsp;&nbsp;
+
+                            <a href="#"> <i class="fa-solid fa-chevron-right" style="color: #f0f2f4;"></i></a>
+                        </div>
+
+                        <div>
+                            <div id="search-bar"> <i class="fa-solid fa-magnifying-glass"
+                                    style="color: #bebcbc;margin-left:6px;font-size: 16px;"></i> <input type="search"
+                                    id="search" placeholder="What do you want to listen to ?"></div>
+                        </div>
+                    </div>
+                    <div style="display:flex;align-items: center;">
+                        <button class="btn-install"><i class="fa-regular fa-circle-down"
+                                style="color: #ffffff;font-size:16px;padding: 4px;"></i>Install App</button>
+                        <p><abbr title="What's New"><i class="fa-regular fa-bell" style="color: #e4e4e6;"
+                                    id="bell"></i></abbr></p>
+                        <p><abbr title="B Dhanunjaya"><i class="fa-regular fa-user"
+                                    style="color: #f4f5f6;margin:20px;cursor: pointer;font-size:16px;"
+                                    id="user-icon"></i></abbr></p>
+                    </div>
+                </div><br><br><br>
+
+                <!--Browse all-->
+                <h3>Browse All</h3><br>
+                <div class="browse-all">
+
+                    <div class="browse-each" style="background-color: orangered;"
+                        onclick="location.href=('https://open.spotify.com/genre/0JQ5DArNBzkmxXHCqFLx2J')">
+                        <h3>Podcasts</h3>
+                        <img src="https://i.scdn.co/image/ab6765630000ba8a6bbebb8055001f8cd1c15da7" class="browse-img"
+                            alt="podcast">
+
+                    </div>
+
+
+                    <div class="browse-each" style="background-color: rgb(255, 0, 170);"
+                        onclick="location.href=('https://open.spotify.com/genre/0JQ5DAqbMKFHCxg5H5PtqW')">
+                        <h3>Hindi</h3>
+                        <img src="https://i.scdn.co/image/ab67706f00000002bb356f4951404ce7362ab02c" alt="hindi"
+                            class="browse-img">
+                    </div>
+
+                    <div class="browse-each" style="background-color: rgb(9, 165, 255);"
+                        onclick="location.href=('https://open.spotify.com/genre/0JQ5DAqbMKFKSopHMaeIeI')">
+                        <h3>Punjabi</h3>
+                        <img src="https://i.scdn.co/image/ab67706f00000002b9d56b4d2ec18d6ffb03bdfe" alt="punjabi"
+                            class="browse-img">
+                    </div>
+                    <div class="browse-each" style="background-color: rgb(255, 208, 0);"
+                        onclick="location.href=('https://open.spotify.com/genre/0JQ5DAqbMKFE33XAyDiPIr')">
+                        <h3>Tamil</h3>
+                        <img src="https://i.scdn.co/image/ab67706f000000025f39096d6d1e374143b5b2fd" alt="tamil"
+                            class="browse-img">
+                    </div>
+
+
+                    <div class="browse-each" style="background-color: rgb(247, 99, 252);"
+                        onclick="location.href=('https://open.spotify.com/genre/0JQ5DAqbMKFIdOwkMWR5at')">
+                        <h3>Telugu</h3>
+                        <img src="https://i.scdn.co/image/ab67706f00000002e012a183ab8ddeff1d01c76e" alt="telugu"
+                            class="browse-img">
+                    </div>
+
+
+                    <div class="browse-each" style="background-color: rgb(0, 47, 255);"
+                        onclick="location.href=('https://open.spotify.com/genre/0JQ5DAqbMKFEC4WFtoNRpw')">
+                        <h3>Pop</h3>
+                        <img src="https://i.scdn.co/image/ab67706c0000da8481b02b2a589b6fd6284c1054" alt="pop"
+                            class="browse-img">
+                    </div>
+
+                    <div class="browse-each" style="background-color: rgb(196, 10, 253);"
+                        onclick="location.href=('https://open.spotify.com/genre/0JQ5DAqbMKFCWjUTdzaG0e')">
+                        <h3>Indie</h3>
+                        <img src="https://i.scdn.co/image/ab67706f0000000290794016d698b0bc9560186f" alt="indie"
+                            class="browse-img">
+                    </div>
+
+
+                    <div class="browse-each" style="background-color: rgb(247, 74, 31);"
+                        onclick="location.href=('https://open.spotify.com/genre/0JQ5DAqbMKFAUsdyVjCQuL')">
+                        <h3>Love</h3>
+                        <img src="https://i.scdn.co/image/ab67706c0000da84ce8946bcd16583b0e65c0ec6" alt="love"
+                            class="browse-img">
+                    </div>
+
+                    <div class="browse-each" style="background-color: rgb(102, 93, 153);"
+                        onclick="location.href=('https://open.spotify.com/genre/0JQ5DAqbMKFzHmL4tf05da')">
+                        <h3>Mood</h3>
+                        <img src="https://i.scdn.co/image/ab67706f00000002bd0e19e810bb4b55ab164a95" alt="mood"
+                            class="browse-img">
+                    </div>
+                    <div class="browse-each" style="background-color: rgb(179, 255, 0);"
+                        onclick="location.href=('https://open.spotify.com/genre/0JQ5DAqbMKFA6SOHvT3gck')">
+                        <h3>Party</h3>
+                        <img src="https://i.scdn.co/image/ab67706f000000024db1a146769c9c586619ae91" alt="party"
+                            class="browse-img">
+                    </div>
+
+                    <div class="browse-each" style="background-color: rgb(37, 143, 33);"
+                        onclick="location.href=('https://open.spotify.com/genre/0JQ5DAqbMKFOTGtSOysEXE')">
+                        <h3>Devotional</h3>
+                        <img src="https://i.scdn.co/image/ab67706c0000da84359afbe8676368790a35c4c2" alt="devotional"
+                            class="browse-img">
+                    </div>
+
+                    <div class="browse-each" style="background-color: rgb(36, 110, 110);"
+                        onclick="location.href=('https://open.spotify.com/genre/0JQ5DAqbMKFIVNxQgRNSg0')">
+                        <h3>Decades</h3>
+                        <img src="https://i.scdn.co/image/ab67706f00000002ba77a2166a7b66e9a300ffaa" alt="decades"
+                            class="browse-img">
+                    </div>
+
+                    <div class="browse-each" style="background-color: rgb(110, 36, 9);"
+                        onclick="location.href=('https://open.spotify.com/genre/0JQ5DAqbMKFQ00XGBls6ym')">
+                        <h3>Hip-Hop</h3>
+                        <img src="https://i.scdn.co/image/ab67706c0000da84c06bf2f63b986a90b48bcd7c" alt="hip-hop"
+                            class="browse-img">
+                    </div>
+
+                    <div class="browse-each" style="background-color: rgb(33, 238, 176);"
+                        onclick="location.href=('https://open.spotify.com/genre/0JQ5DAqbMKFHOzuVTgTizF')">
+                        <h3>Dance Party</h3>
+                        <img src="https://routenote.com/blog/wp-content/uploads/2021/07/ab67706f00000003470dd505fcf08e4693db9b24.jpg"
+                            alt="dance-party" class="browse-img">
+                    </div>
+                    <div class="browse-each" style="background-color: rgb(50, 50, 82);"
+                        onclick="location.href=('https://open.spotify.com/genre/0JQ5DAqbMKFFzDl7qN9Apr')">
+                        <h3>Chill</h3>
+                        <img src="https://i.scdn.co/image/ab67706f00000002f2d08778548e125bcb867692" alt="chill"
+                            class="browse-img">
+                    </div>
+
+                    <div class="browse-each" style="background-color: rgb(126, 230, 42);"
+                        onclick="location.href=('https://open.spotify.com/genre/0JQ5DAqbMKFAXlCG6QvYQ4')">
+                        <h3>Workout</h3>
+                        <img src="https://i.scdn.co/image/ab67706f00000002068288e2c4f1980dc0976c85" alt="workout"
+                            class="browse-img">
+                    </div>
+                    <div class="browse-each" style="background-color: rgb(141, 139, 248);"
+                        onclick="location.href=('https://open.spotify.com/genre/0JQ5DAqbMKFImHYGo3eTSg')">
+                        <h3>Fresh Finds</h3>
+                        <img src="https://i.scdn.co/image/ab67706f00000002e7e35ce06bbdd7f449c79c7f" alt="freshfinds"
+                            class="browse-img">
+                    </div>
+
+                    <div class="browse-each" style="background-color: rgb(189, 139, 185);"
+                        onclick="location.href=('https://open.spotify.com/genre/0JQ5DAqbMKFDXXwE9BDJAr')">
+                        <h3>Rock</h3>
+                        <img src="https://i.scdn.co/image/ab67706f0000000278b4745cb9ce8ffe32daaf7e" alt="Rock"
+                            class="browse-img">
+                    </div>
+
+                    <div class="browse-each" style="background-color: rgb(214, 125, 118);"
+                        onclick="location.href=('https://open.spotify.com/genre/0JQ5DAqbMKFAEu5QlAkwvV')">
+                        <h3>Indian Classical</h3>
+                        <img src="https://i.scdn.co/image/ab67706c0000da8404a0cadc1f37440c98224865"
+                            alt="indian-classical" class="browse-img">
+                    </div>
+                    <div class="browse-each" style="background-color: rgb(231, 241, 141);"
+                        onclick="location.href=('https://open.spotify.com/genre/0JQ5DAqbMKFRieVZLLoo9m')">
+                        <h3>Instrumental</h3>
+                        <img src="https://i.scdn.co/image/ab67706c0000da841e4d12ad7f0548bd3fdf9152" alt="instrumental"
+                            class="browse-img">
+                    </div>
+
+
+                    <div class="browse-each" style="background-color: rgb(41, 114, 119);"
+                        onclick="location.href=('https://open.spotify.com/genre/0JQ5DAqbMKFCbimwdOYlsl')">
+                        <h3>Focus</h3>
+                        <img src="https://i.scdn.co/image/ab67706f00000002d6d48b11fd3b11da654c3519" alt="focus"
+                            class="browse-img">
+                    </div>
+
+                    <div class="browse-each" style="background-color: rgb(138, 101, 240);"
+                        onclick="location.href=('https://open.spotify.com/genre/0JQ5DAqbMKFDBgllo2cUIN')">
+                        <h3>Spotify Singles</h3>
+                        <img src="https://i.scdn.co/image/ab67616d00001e0243f7d1ce691692ae2122b0a2" alt="singles"
+                            class="browse-img">
+                    </div>
+
+                    <div class="browse-each" style="background-color: orangered;"
+                        onclick="location.href=('https://open.spotify.com/genre/0JQ5DAqbMKFIxnofjQmnmn')">
+                        <h3>Disney Hits</h3>
+                        <img src="https://i.scdn.co/image/ab67706f000000027581bb907831caadba1fc713" alt="disney"
+                            class="browse-img">
+                    </div>
+
+                    <div class="browse-each" style="background-color: rgb(243, 134, 216);"
+                        onclick="location.href=('https://open.spotify.com/genre/0JQ5DAqbMKFIpEuaCnimBj')">
+                        <h3>Soul</h3>
+                        <img src="https://i.scdn.co/image/ab67706f000000026e1034ebd7b7c86546c6acca" alt="Soul"
+                            class="browse-img">
+                    </div>
+
+                    <div class="browse-each" style="background-color: rgb(92, 112, 224);"
+                        onclick="location.href=('https://open.spotify.com/genre/0JQ5DAqbMKFOzQeOmemkuw')">
+                        <h3>Tv & Movies</h3>
+                        <img src="https://lite-images-i.scdn.co/image/ab67616d0000b2739c3c13a0643e08a6ccd53b59"
+                            alt="tvandmovies" class="browse-img">
+                    </div>
+
+                    <div class="browse-each" style="background-color: rgb(21, 247, 96);"
+                        onclick="location.href=('https://open.spotify.com/genre/0JQ5DAqbMKFAQy4HL4XU2D')">
+                        <h3>Travels</h3>
+                        <img src="https://i.scdn.co/image/ab67706f000000021db2dfdf5b2d60b5605fbe3d" alt="travels"
+                            class="browse-img">
+                    </div>
+
+                    <div class="browse-each" style="background-color: rgb(178, 236, 83);"
+                        onclick="location.href=('https://open.spotify.com/genre/0JQ5DAqbMKFLjmiZRss79w')">
+                        <h3>Ambient</h3>
+                        <img src="https://i.scdn.co/image/ab67706c0000da84ae4fcf6e17c69e83d4c645f3" alt="Ambient"
+                            class="browse-img">
+                    </div>
+
+                    <div class="browse-each" style="background-color: rgb(63, 188, 238);"
+                        onclick="location.href=('https://open.spotify.com/genre/0JQ5DAqbMKFRKBHIxJ5hMm')">
+                        <h3>Testmakers</h3>
+                        <img src="https://i.scdn.co/image/ab67706c0000da8457d6b76e6f130b42d0666827" alt="testmakers"
+                            class="browse-img">
+                    </div>
+
+                    <div class="browse-each" style="background-color: rgb(113, 241, 53);"
+                        onclick="location.href=('https://open.spotify.com/genre/0JQ5DAqbMKFxXaXKP7zcDp')">
+                        <h3>Latin</h3>
+                        <img src="https://i.scdn.co/image/ab67706f000000027eac3a22b6b3756d62373f48" alt="latin"
+                            class="browse-img">
+                    </div>
+
+                    <div class="browse-each" style="background-color: rgb(74, 189, 29);"
+                        onclick="location.href=('https://open.spotify.com/genre/0JQ5DAqbMKFI3pNLtYMD9S')">
+                        <h3>Nature Noise</h3>
+                        <img src="https://i.scdn.co/image/ab67706f000000027eac3a22b6b3756d62373f48" alt="noise"
+                            class="browse-img">
+                    </div>
+
+
+                </div>
+                <br><b><br></br>
+
+
+
+
+
+                    <!--About info-->
+
+                    <div class="table-div-container">
+                        <div style="width:70%">
+                            <table style="font-size:16px;margin-left:20px" cellspacing="15px">
+                                <thead>
+                                    <tr>
+                                        <th style="padding-right:80px">Company</th>
+                                        <th style="padding-right:60px">Communities</th>
+                                        <th>Useful links</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><a href="#">About</a></td>
+                                        <td><a href="#">For Artists</a></td>
+                                        <td><a href="#">Support</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">Jobs</a></td>
+                                        <td><a href="#">Developers</a></td>
+                                        <td><a href="#">Fee Mobile App</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">For the record</a></td>
+                                        <td><a href="#">Advertising</a></td>
+                                        <td></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td></td>
+                                        <td><a href="#">Investors</a></td>
+                                        <td></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td></td>
+                                        <td><a href="#">Vendors</a></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                        <!--Insta Twitter fb icon container -->
+
+                        <div class="i-t-f-container">
+                            <div class="i-t-f-div"><i class="fa-brands fa-instagram"
+                                    style="color: #fcfcfc;margin-top: 10px;"></i></div>
+                            <div class="i-t-f-div"> <i class="fa-brands fa-twitter"
+                                    style="color: #f7f7f7;margin-top:10px;"></i></div>
+                            <div class="i-t-f-div"><i class="fa-brands fa-facebook"
+                                    style="color: #f4f7fa;margin-top:10px;"></i></div>
+
+
+                        </div>
+
+
+                    </div>
+
+                    <p style="border-bottom: 1px solid rgb(156, 154, 154);"></p>
+
+                    <div id="about-div">
+
+                        <a href="#">Legal</a>
+                        <a href="#">Privacy Center</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Cookies</a>
+                        <a href="#">About Ads</a>
+                        <a href="#">Accessibility</a>
+
+                    </div>
+
+
+
+
+
+            </div>
+
+        </div>
+
+        <!--Footer Divison-->
+        <div class="footer"
+            style="background-color:black;height:80px;box-sizing: border-box;width:100%;text-align: center;">
+            <audio src="" controls style="width:500px;height:45px;margin-top:10px;" id="audio"></audio>
+        </div>
+
+
+        <script>
+            function play_song(sr) {
+                var audio = document.getElementById('audio');
+                audio.src = sr;
+                audio.play();
+            }
+        </script>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web player: Music for everyone</title>
+    <link rel="icon" href="Spotify_Images/sp-logo.avif">
+    <script src="https://kit.fontawesome.com/1da18cb119.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Spotify_home.css">
+
+
+</head>
+
+<body>
+    <div>
+        <div class="div-container">
+            <div class="div-left">
+
+                <!--Home Division-->
+                <div class="home-div">
+                    <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_White.png" alt=""
+                        style="width:80px;height:25px;"><br><br>
+                    <a href="#">
+                        <h3 style="color:white"> <i class="fa-solid fa-house"
+                                style="color: #fcfcfc;font-size:20px;margin-right:20px;"></i>Home</h3>
+                    </a>
+                    <a href="search.html">
+                        <h3 class="search-white"><i class="fa-solid fa-magnifying-glass"
+                                style="color: white;font-size:20px;margin-right:20px;"></i>Search</h3>
+                    </a>
+
+                </div>
+                <!--Playlist Division-->
+                <div class="play-list">
+                    <div style="display: flex;flex-direction: row;justify-content: space-between;margin-bottom:20px;">
+                        <a href="#">
+                            <h3 class="ur-library"><i class="fa-solid fa-book"
+                                    style="color: white;font-size:20px;margin-right:15px;"></i>Your Library</h3>
+                        </a>
+                        <a href="#">
+                            <h3 style="margin-left:10px;"><abbr title="Create playlist or folder"><i
+                                        class="fa-solid fa-plus bg-hover"
+                                        style="color: #8d8e8f;font-size:20px;"></i></abbr></h3>
+                        </a>
+
+                    </div>
+
+
+
+                    <!--playlist div-->
+                    <div style="overflow-x:hidden;height:100px;width:100%;border-radius: 10px;margin-bottom: 10px;">
+
+
+
+
+                        <div class="playlist-div">
+                            <h3>Create your first playlist</h3>
+                            <p>It's easy, we'll help you</p><br>
+                            <button class="create-playlist-btn">Create playlist</button>
+                        </div>
+                        <br>
+                        <div class="playlist-div">
+                            <h3>Lets find some podcasts to follow</h3>
+                            <p>We'll keep you updated on new episodes</p><br>
+                            <button class="create-playlist-btn">Browse podcasts</button>
+                        </div>
+
+                    </div><br>
+                    <!-- Anchor links divison -->
+                    <div>
+                        <a href="#" class="sp-home-anchor-links">Legal</a>
+                        <a href="3" class="sp-home-anchor-links">Privacy&nbsp;Center</a>
+                        <a href="#" class="sp-home-anchor-links">Privacy&nbsp;Policy</a><br><br>
+                        <a href="#" class="sp-home-anchor-links">Cookies</a>
+                        <a href="#" class="sp-home-anchor-links">About ads</a>
+                        <a href="#" class="sp-home-anchor-links">Accessibility</a><br><br>
+                        <a href="#" class="sp-home-anchor-links" id="cookies">Cookies</a>
+
+                    </div><br>
+                    <!-- choose language  button -->
+                    <div>
+                        <button id="english-btn"><i class="fa-solid fa-globe"
+                                style="color: #f6f7f9;font-size: 16px;"></i>&nbsp;English</button>
+                    </div>
+
+
+
+
+                </div>
+
+
+
+            </div>
+            <!-- Right Division-->
+            <div class="div-right">
+                <div class="right-div-nav">
+                    <a href="spotify_signin.html"> <button class="sp-home-signin">Sign up</button></a>
+                    <a href="spotify_login.html"> <button class="sp-home-login">Log in</button></a>
+
+                </div><br>
+
+                <div class="heading-container">
+                    <h3 class="right-div-heading">Spotify Playlists </h3>
+                    <p class="right-div-showall">Show all</p>
+
+                </div>
+
+
+                <!--shows row-->
+
+                <div
+                    style="width:100%;display: flex;flex-direction: row;justify-content: space-around;margin-bottom:40px;flex-wrap: wrap;gap:20px;">
+
+                    <div class="show-div">
+                        <img src="https://images.genius.com/9981be1fb5fa67fb8ba50d3f54b7b73e.640x640x1.jpg" alt="olivia"
+                            class="img-img">
+                        <img src="https://lovepngs.com/images/all_img/copy/1672490351SPOTIFY-PLAY-BUTTO%202%20(1).png"
+                            alt="" class="play-button">
+                        <h6 class="show-name">Today's Top Hits</h6>
+                        <p class="show-actor">Olivia Rodrigo </p>
+                    </div>
+
+                    <div class="show-div">
+                        <img src="https://i.scdn.co/image/ab67706f000000020107a3aeac780c2d2cf621ca" alt="rapcavior"
+                            class="img-img">
+                        <img src="https://lovepngs.com/images/all_img/copy/1672490351SPOTIFY-PLAY-BUTTO%202%20(1).png"
+                            alt="" class="play-button">
+                        <h6 class="show-name">Rapcavior</h6>
+                        <p class="show-actor">New music from Fivio Foreign,Lil Yatchy an..</p>
+                    </div>
+
+                    <div class="show-div">
+                        <img src="https://i.scdn.co/image/ab67706f00000002b0fe40a6e1692822f5a9d8f1" alt="nalla"
+                            class="img-img">
+                        <img src="https://lovepngs.com/images/all_img/copy/1672490351SPOTIFY-PLAY-BUTTO%202%20(1).png"
+                            alt="" class="play-button">
+                        <h6 class="show-name">All Out 2010s</h6>
+                        <p class="show-actor">The biggest songs of the 2010s</p>
+                    </div>
+
+                    <div class="show-div">
+                        <img src="https://i.scdn.co/image/ab67706f0000000278b4745cb9ce8ffe32daaf7e" alt="virus"
+                            class="img-img">
+                        <img src="https://lovepngs.com/images/all_img/copy/1672490351SPOTIFY-PLAY-BUTTO%202%20(1).png"
+                            alt="" class="play-button">
+                        <h6 class="show-name">Rock Classics</h6>
+                        <p class="show-actor">Rock legends & epic songs that continue t..</p>
+                    </div>
+
+                    <div class="show-div">
+                        <img src="https://i.scdn.co/image/ab67706f00000002b60db5d1bcdd9c4fd1ebcffe" alt="pretkotha"
+                            width="200" class="img-img">
+                        <img src="https://lovepngs.com/images/all_img/copy/1672490351SPOTIFY-PLAY-BUTTO%202%20(1).png"
+                            alt="" class="play-button">
+                        <h6 class="show-name">Chill Hits</h6>
+                        <p class="show-actor">Kick back to the best new and recent chill..</p>
+                    </div>
+
+
+
+
+                </div>
+
+                <div>
+                    <h3 style="margin-left: 10px;margin-bottom: 20px;">Sleep </h3>
+
+
+                </div>
+                <div style="width:100%;display: flex;flex-direction: row;margin-bottom:40px;flex-wrap: wrap;gap:25px;">
+
+                    <div class="show-div">
+                        <img src="https://i.scdn.co/image/ab67706f0000000281722192322800ae99c2ed06" alt="olivia"
+                            class="img-img">
+                        <img src="https://lovepngs.com/images/all_img/copy/1672490351SPOTIFY-PLAY-BUTTO%202%20(1).png"
+                            alt="" class="play-button">
+                        <h6 class="show-name">Sleep</h6>
+                        <p class="show-actor">Gentle Ambient ipiano to help you fall asleep. </p>
+                    </div>
+
+                    <div class="show-div">
+                        <img src="https://i.scdn.co/image/ab67706f00000002d2291e0c5d43a1b21a941031" alt="rapcavior"
+                            class="img-img">
+
+                        <img src="https://lovepngs.com/images/all_img/copy/1672490351SPOTIFY-PLAY-BUTTO%202%20(1).png"
+                            alt="" class="play-button">
+
+                        <h6 class="show-name">DayDreamer</h6>
+                        <p class="show-actor">Drift away with enthralling...</p>
+                    </div>
+
+
+
+
+                </div>
+
+
+                <!--About info-->
+
+                <div class="table-div-container">
+                    <div style="width:70%">
+                        <table style="font-size:16px;margin-left:20px" cellspacing="15px">
+                            <thead>
+                                <tr>
+                                    <th style="padding-right:80px">Company</th>
+                                    <th style="padding-right:60px">Communities</th>
+                                    <th>Useful links</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="#">About</a></td>
+                                    <td><a href="#">For Artists</a></td>
+                                    <td><a href="#">Support</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">Jobs</a></td>
+                                    <td><a href="#">Developers</a></td>
+                                    <td><a href="#">Fee Mobile App</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">For the record</a></td>
+                                    <td><a href="#">Advertising</a></td>
+                                    <td></td>
+                                </tr>
+
+                                <tr>
+                                    <td></td>
+                                    <td><a href="#">Investors</a></td>
+                                    <td></td>
+                                </tr>
+
+                                <tr>
+                                    <td></td>
+                                    <td><a href="#">Vendors</a></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                    <!--Insta Twitter fb icon container -->
+
+                    <div class="i-t-f-container">
+                        <div class="i-t-f-div"><i class="fa-brands fa-instagram"
+                                style="color: #fcfcfc;margin-top: 10px;"></i></div>
+                        <div class="i-t-f-div"> <i class="fa-brands fa-twitter"
+                                style="color: #f7f7f7;margin-top:10px;"></i></div>
+                        <div class="i-t-f-div"><i class="fa-brands fa-facebook"
+                                style="color: #f4f7fa;margin-top:10px;"></i></div>
+
+
+                    </div>
+
+
+                </div>
+
+                <p style="border-bottom: 1px solid rgb(156, 154, 154);"></p>
+
+                <div id="about-div">
+
+                    <a href="#">Legal</a>
+                    <a href="#">Privacy Center</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Cookies</a>
+                    <a href="#">About Ads</a>
+                    <a href="#">Accessibility</a>
+
+                </div>
+
+
+
+
+
+            </div>
+
+        </div>
+
+        <!--Footer Divison-->
+        <div class="footer">
+            <div class="footer-div1">
+                <div>
+                    <h4 style="font-size:14px">PREVIEW OF SPOTFY</h4>
+                    <p>Sign up to get unlimited songs and poscasts with occasional ads. No credit card needed.</p>
+                </div>
+                <div>
+                    <a href="spotify_signin.html"> <button id="sign-up-free">Sign up free</button></a>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+</body>
+
+</html>
